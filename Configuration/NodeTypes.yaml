@@ -1,0 +1,65 @@
+'GC.News:News':
+  superTypes:
+    - 'TYPO3.Neos:Document'
+  ui:
+    label: News
+    icon: 'icon-file-text'
+    inspector:
+      groups:
+        date:
+          label: Dates
+        filter:
+          label: Filters
+        moreInfos:
+          label: More infos
+  childNodes:
+    main:
+      type: 'TYPO3.Neos:ContentCollection'
+  properties:
+    displayDate:
+      type: date
+      ui:
+        label: Display date
+        reloadIfChanged: true
+        inspector:
+          group: date
+    fromDate:
+      type: date
+      ui:
+        label: From
+        reloadIfChanged: true
+        inspector:
+          group: date
+    toDate:
+      type: date
+      ui:
+        label: To
+        reloadIfChanged: true
+        inspector:
+          group: date
+    hightlight:
+      type: boolean
+      ui:
+        label: Highlight
+        inspector:
+          group: filter
+    category:
+      type: string
+      ui:
+        label: Category
+        inspector:
+          group: filter
+    image:
+      type: TYPO3\Media\Domain\Model\ImageVariant
+      ui:
+        label: 'Image'
+        reloadIfChanged: TRUE
+        inspector:
+          group: moreInfos
+    teaser:
+      type: string
+      ui:
+        label: Teaser
+        inspector:
+          editor: TYPO3.Neos/Inspector/Editors/TextAreaEditor
+          group: moreInfos

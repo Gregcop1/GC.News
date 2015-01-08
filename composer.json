@@ -1,0 +1,23 @@
+{
+    "name": "gc/news",
+    "type": "typo3-flow-package",
+    "description": "News plugin for Typo3 Neos",
+    "license": ["MIT"],
+    "authors": [
+        {
+            "name": "Grégory Copin",
+            "email": "gregcop1@gmail.com",
+            "homepage": "https://github.com/Gregcop1",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/flow":">=2.0.0-beta1",
+        "typo3/neos":">=1.0.0-alpha3"
+    },
+    "autoload": {
+        "psr-0": {
+            "GC\\News": "Classes"
+        }
+    }
+}
