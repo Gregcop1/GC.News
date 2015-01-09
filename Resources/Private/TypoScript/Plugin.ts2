@@ -1,0 +1,6 @@
+prototype(GC.News:Plugin) < prototype(TYPO3.Neos:Plugin)
+prototype(GC.News:Plugin) {
+  package = 'GC.News'
+  controller = 'News'
+  action = 'list'
+}

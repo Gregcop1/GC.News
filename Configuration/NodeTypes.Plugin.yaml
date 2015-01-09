@@ -1,0 +1,7 @@
+'GC.News:Plugin':
+  superTypes: 
+    - 'TYPO3.Neos:Content'
+  ui:
+    label: News list
+    group: plugins
+    icon: 'icon-file-text'

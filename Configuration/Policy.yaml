@@ -1,0 +1,7 @@
+resources:
+  methods:
+    'GC.News:NewsController': 'method(GC\News\Controller\NewsController->listAction())'
+acls:
+  'TYPO3.Neos:Editor':
+    methods:
+      'GC.News:NewsController': GRANT
